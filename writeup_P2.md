@@ -1,6 +1,6 @@
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
+[image1]: /visualization.jpg "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
@@ -31,7 +31,8 @@
 * The shape of a traffic sign image is (32, 32, 3)
 * The number of unique classes/labels in the data set is 43
 
-*2) Exploratory Visualization:* The submission includes an exploratory visualization on the dataset.
+*2) Exploratory Visualization: The submission includes an exploratory visualization on the dataset.*
+
 **Comment**: The code for this step is contained in the third code cell of the IPython notebook.  
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
 ![alt text][image1]
