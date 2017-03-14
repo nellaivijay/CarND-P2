@@ -51,6 +51,23 @@ The 6th cell contains the code for random translation:
 
 ![Figure 4](transplation.png)
 
+The 7th cell contains the code for random scaling:
+
+![Figure 5](scaling.png)
+
+The 8th cell contains the code for random warping:
+
+![Figure 5](warping.png)
+
+The 9th cell contains the code for random brightness:
+
+![Figure 6](brightness.png)
+
+The minimum number of label was 180 (10th cell). I increased it to 1,000 (11th cell). Below is a comparison between the orignal (top row) and the augmented images (bottom row) of 5 randomly selected images (12th cell).
+
+![Figure 7](augmented.png)
+
+
 
 
 The sixth code cell of the IPython notebook contains the code for augmenting the data set. I decided to generate additional data because ... To add more data to the the data set, I used the following techniques because ... 
