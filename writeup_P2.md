@@ -11,7 +11,7 @@
 
 # [Rubric Points](https://review.udacity.com/#!/rubrics/481/view) 
 # **1. Files Submitted**
-*Submission Files: The project submission includes all required files.*
+*1) Submission Files: The project submission includes all required files.*
 * The Traffic_Sign_Classifier.ipynb notebook file with all questions answered and all code cells executed and displaying output.
 * An HTML or PDF export of the project notebook with the name report.html or report.pdf.
 * Any additional datasets or images used for the project that are not from the German Traffic Sign Dataset.
@@ -19,7 +19,7 @@
 **Comment**: All required files are included in this repository.
 
 # **2. Dataset Exploration**
-*Dataset Summary: The submission includes a basic summary of the data set.*
+*1) Dataset Summary: The submission includes a basic summary of the data set.*
 **Comment**: The code for this step is contained in the second code cell of the IPython notebook.  
 I used the pandas library to calculate summary statistics of the traffic
 signs data set:
@@ -28,24 +28,64 @@ signs data set:
 * The shape of a traffic sign image is ?
 * The number of unique classes/labels in the data set is ?
 
-*Exploratory Visualization:* The submission includes an exploratory visualization on the dataset.
+*2) Exploratory Visualization:* The submission includes an exploratory visualization on the dataset.
 **Comment**: The code for this step is contained in the third code cell of the IPython notebook.  
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
 ![alt text][image1]
 
 # **3. Design and Test a Model Architecture**
-*Preprocessing: The submission describes the preprocessing techniques used and why these techniques were chosen.*
+*1) Preprocessing: The submission describes the preprocessing techniques used and why these techniques were chosen.*
 ####1. Describe how, and identify where in your code, you preprocessed the image data. What tecniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc.
-
 **Comment**: The code for this step is contained in the fourth code cell of the IPython notebook.
-
 As a first step, I decided to convert the images to grayscale because ...
-
 Here is an example of a traffic sign image before and after grayscaling.
-
 ![alt text][image2]
-
 As a last step, I normalized the image data because ...
+
+AUGMENT THE TRAINING DATA
+Augmenting the training set might help improve model performance. Common data augmentation techniques include rotation, translation, zoom, flips, and/or color perturbation. These techniques can be used individually or combined.
+
+
+*2) Model Architecture: The submission provides details of the characteristics and qualities of the architecture, such as the type of model used, the number of layers, the size of each layer. Visualizations emphasizing particular qualities of the architecture are encouraged.*
+
+**Comment**:
+
+*3) Model Training: The submission describes how the model was trained by discussing what optimizer was used, batch size, number of epochs and values for hyperparameters.*
+
+**Comment**:
+
+*4) Solution Approach: The submission describes the approach to finding a solution. Accuracy on the validation set is 0.93 or greater.*
+
+**Comment**:
+
+# **4. Test a Model on New Images**
+
+*1) Acquiring New Images: The submission includes five new German Traffic signs found on the web, and the images are visualized. Discussion is made as to any particular qualities of the images or traffic signs in the images that may be of interest, such as whether they would be difficult for the model to classify.*
+
+**Comment**:
+
+ANALYZE NEW IMAGE PERFORMANCE IN MORE DETAIL
+Calculating the accuracy on these five German traffic sign images found on the web might not give a comprehensive overview of how well the model is performing. Consider ways to do a more detailed analysis of model performance by looking at predictions in more detail. For example, calculate the precision and recall for each traffic sign type from the test set and then compare performance on these five new images..
+
+If one of the new images is a stop sign but was predicted to be a bumpy road sign, then we might expect a low recall for stop signs. In other words, the model has trouble predicting on stop signs. If one of the new images is a 100 km/h sign but was predicted to be a stop sign, we might expect precision to be low for stop signs. In other words, if the model says something is a stop sign, we're not very sure that it really is a stop sign.
+
+Looking at performance of individual sign types can help guide how to better augment the data set or how to fine tune the model. 
+
+
+*2) Performance on New Images: The submission documents the performance of the model when tested on the captured images. The performance on the new images is compared to the accuracy results of the test set.*
+
+**Comment**:
+
+*3) Model Certainty - Softmax Probabilities: The top five softmax probabilities of the predictions on the captured images are outputted. The submission discusses how certain or uncertain the model is of its predictions.*
+
+**Comment**:
+
+CREATE VISUALIZATIONS OF THE SOFTMAX PROBABILITIES
+For each of the five new images, create a graphic visualization of the soft-max probabilities. Bar charts might work well.
+
+VISUALIZE LAYERS OF THE NEURAL NETWORK
+See Step 4 of the Iptyon notebook for details about how to do this.
+
 
 ####2. Describe how, and identify where in your code, you set up training, validation and testing data. How much data was in each set? Explain what techniques were used to split the data into these sets. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, identify where in your code, and provide example images of the additional data)
 
