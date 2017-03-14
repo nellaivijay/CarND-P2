@@ -1,6 +1,6 @@
 [//]: # (Image References)
 
-[image1]: /visualization.jpg "Visualization"
+[image1]: https://github.com/ashikagah/CarND-P2/index.png "histogram original"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
@@ -35,12 +35,11 @@
 
 **Comment**: The code for this step is contained in the third code cell of the IPython notebook.  
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
-![alt text][index.png]
 
 Reference-style: 
-![alt text][logo]
+![alt text][image1]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+
 
  CarND-P2/index.png 
 
