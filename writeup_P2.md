@@ -11,40 +11,33 @@
 
 # [Rubric Points](https://review.udacity.com/#!/rubrics/481/view) 
 # **1. Files Submitted**
-*Submission Files:* The project submission includes all required files.
+*Submission Files: The project submission includes all required files.*
 * The Traffic_Sign_Classifier.ipynb notebook file with all questions answered and all code cells executed and displaying output.
 * An HTML or PDF export of the project notebook with the name report.html or report.pdf.
 * Any additional datasets or images used for the project that are not from the German Traffic Sign Dataset.
 
-Comment: All required files are included in this repository.
+**Comment**: All required files are included in this repository.
 
 # **2. Dataset Exploration**
-*Dataset Summary:* The submission includes a basic summary of the data set.
-
-
-The code for this step is contained in the second code cell of the IPython notebook.  
-
+*Dataset Summary: The submission includes a basic summary of the data set.*
+**Comment**: The code for this step is contained in the second code cell of the IPython notebook.  
 I used the pandas library to calculate summary statistics of the traffic
 signs data set:
-
 * The size of training set is ?
 * The size of test set is ?
 * The shape of a traffic sign image is ?
 * The number of unique classes/labels in the data set is ?
 
 *Exploratory Visualization:* The submission includes an exploratory visualization on the dataset.
-
-The code for this step is contained in the third code cell of the IPython notebook.  
-
+**Comment**: The code for this step is contained in the third code cell of the IPython notebook.  
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
-
 ![alt text][image1]
 
-###Design and Test a Model Architecture
-
+# **3. Design and Test a Model Architecture**
+*Preprocessing: The submission describes the preprocessing techniques used and why these techniques were chosen.*
 ####1. Describe how, and identify where in your code, you preprocessed the image data. What tecniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc.
 
-The code for this step is contained in the fourth code cell of the IPython notebook.
+**Comment**: The code for this step is contained in the fourth code cell of the IPython notebook.
 
 As a first step, I decided to convert the images to grayscale because ...
 
