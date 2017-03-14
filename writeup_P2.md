@@ -10,22 +10,17 @@
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
 
 # [Rubric Points](https://review.udacity.com/#!/rubrics/481/view) 
-
 # **1. Files Submitted**
 *Submission Files:* The project submission includes all required files.
-
 * The Traffic_Sign_Classifier.ipynb notebook file with all questions answered and all code cells executed and displaying output.
 * An HTML or PDF export of the project notebook with the name report.html or report.pdf.
 * Any additional datasets or images used for the project that are not from the German Traffic Sign Dataset.
 
-Comment
-####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
+Comment: All required files are included in this repository.
 
-You're reading it! and here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+# **2. Dataset Exploration**
+*Dataset Summary:* The submission includes a basic summary of the data set.
 
-###Data Set Summary & Exploration
-
-####1. Provide a basic summary of the data set and identify where in your code the summary was done. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
 
 The code for this step is contained in the second code cell of the IPython notebook.  
 
@@ -37,7 +32,7 @@ signs data set:
 * The shape of a traffic sign image is ?
 * The number of unique classes/labels in the data set is ?
 
-####2. Include an exploratory visualization of the dataset and identify where the code is in your code file.
+*Exploratory Visualization:* The submission includes an exploratory visualization on the dataset.
 
 The code for this step is contained in the third code cell of the IPython notebook.  
 
