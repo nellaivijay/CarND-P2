@@ -32,15 +32,12 @@
 
 *2) Exploratory Visualization: The submission includes an exploratory visualization on the dataset.*
 
-**Comment**: The code for this step is contained in the third code cell of the IPython notebook.  
+**Comment**: The code for this step is contained in the third code cell of the IPython notebook. 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
 
-Reference-style: 
-![alt text][image1]
-![alt text](https://github.com/ashikagah/CarND-P2/index.png "histogram original")
 
+![Figure 1](index.png)
 
- CarND-P2/index.png 
 
 # **3. Design and Test a Model Architecture**
 *1) Preprocessing: The submission describes the preprocessing techniques used and why these techniques were chosen.*
