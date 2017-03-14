@@ -21,24 +21,30 @@
 
 *2) Exploratory Visualization: The submission includes an exploratory visualization on the dataset.*
 
-**Comment**: The code in the 3rd cell of the IPython notebook shows 10 random image data extracted from the training set:
+**Comment**: The code in the 3rd cell shows 10 random image data extracted from the training set:
 
 ![Figure 1](10random_classes.png)
 
-The code in the 4th cell of the IPython notebook shows a histogram showing the frequency of each class:
+The code in the 4th cell shows a histogram showing the frequency of each class:
 
 ![Figure 2](histogram1.png)
 
-The historgram shows significant variability in class representation - some classes < 250 and other classes > 1,500. I tried to minimize the over/under-representation issue by data augmentation (see *Preprocessing* below).
+The historgram clearly shows significant variability in class representation - some classes < 250 and other classes > 1,500. I tried to minimize the over/under-representation issue by data augmentation (see *Preprocessing* below).
 
 # **3. Design and Test a Model Architecture**
 *1) Preprocessing: The submission describes the preprocessing techniques used and why these techniques were chosen.*
 
-**Comment**: The code for this step is contained in the fourth code cell of the IPython notebook.
-As a first step, I decided to convert the images to grayscale because ...
-Here is an example of a traffic sign image before and after grayscaling.
-![alt text][image2]
-As a last step, I normalized the image data because ...
+**Comment**: As a first step, I converted the images to grayscale and normalized the signal intensity to (-1, 1) to improve the model preformance. The code is included in the 5th cell.
+
+* The shape of the image after grayscaling/normalization is (32, 32, 1)
+* The mean signal intensity of the image is:
+  + Training set -0.354081335648
+  + Validation set -0.347215411128
+  + Test set -0.358215153428
+
+Below are 10 random image data extracted from the training set after grayscaling and normalization
+![Figure 3](10random_classes_gn.png)
+
 
 AUGMENT THE TRAINING DATA
 Augmenting the training set might help improve model performance. Common data augmentation techniques include rotation, translation, zoom, flips, and/or color perturbation. These techniques can be used individually or combined.
