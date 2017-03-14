@@ -23,11 +23,11 @@
 
 **Comment**: The code in the 3rd cell of the IPython notebook shows 10 random image data extracted from the training set:
 
-![Figure 1](10_random_classes.png)
+![Figure 1](10random_classes.png)
 
 The code in the 4th cell of the IPython notebook shows a histogram showing the frequency of each class:
 
-![Figure 2](index.png)
+![Figure 2](histogram1.png)
 
 The historgram shows significant variability in class representation - some classes < 250 and other classes > 1,500. I tried to minimize the over/under-representation issue by data augmentation (see *Preprocessing* below).
 
