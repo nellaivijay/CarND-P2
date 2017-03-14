@@ -12,21 +12,24 @@
 # [Rubric Points](https://review.udacity.com/#!/rubrics/481/view) 
 # **1. Files Submitted**
 *1) Submission Files: The project submission includes all required files.*
+
 * The Traffic_Sign_Classifier.ipynb notebook file with all questions answered and all code cells executed and displaying output.
 * An HTML or PDF export of the project notebook with the name report.html or report.pdf.
 * Any additional datasets or images used for the project that are not from the German Traffic Sign Dataset.
+* Your writeup report as a markdown or pdf file
 
 **Comment**: All required files are included in this repository.
 
 # **2. Dataset Exploration**
 *1) Dataset Summary: The submission includes a basic summary of the data set.*
-**Comment**: The code for this step is contained in the second code cell of the IPython notebook.  
-I used the pandas library to calculate summary statistics of the traffic
-signs data set:
-* The size of training set is ?
-* The size of test set is ?
-* The shape of a traffic sign image is ?
-* The number of unique classes/labels in the data set is ?
+
+**Comment**: The code for this step is contained in the second code cell of the IPython notebook. I used the numpy library to calculate summary statistics of the traffic signs data set:
+
+* The size of training set is 34,799
+* The size of validation set is 4,410
+* The size of test set is 12,630
+* The shape of a traffic sign image is (32, 32, 3)
+* The number of unique classes/labels in the data set is 43
 
 *2) Exploratory Visualization:* The submission includes an exploratory visualization on the dataset.
 **Comment**: The code for this step is contained in the third code cell of the IPython notebook.  
