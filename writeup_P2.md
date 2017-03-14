@@ -1,13 +1,3 @@
-
-[image1]: https://github.com/ashikagah/CarND-P2/index.png "histogram original"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
-
 # [Rubric Points](https://review.udacity.com/#!/rubrics/481/view) 
 # **1. Files Submitted**
 *1) Submission Files: The project submission includes all required files.*
@@ -32,12 +22,13 @@
 
 *2) Exploratory Visualization: The submission includes an exploratory visualization on the dataset.*
 
-**Comment**: The code for this step is contained in the third code cell of the IPython notebook. 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
-
-
+**Comment**: The code for this step is contained in the third code cell of the IPython notebook. Below are 10 random image data extracted from the training set:
 ![Figure 1](index.png)
 
+Below is a histogram showing the frequency of each class:
+![Figure 2](index.png)
+
+The historgram shows significant variability in class representation - some classes < 250 and other classes > 1,500. I tried to minimize the over/under-representation issue by data augmentation (see *Preprocessing* below).
 
 # **3. Design and Test a Model Architecture**
 *1) Preprocessing: The submission describes the preprocessing techniques used and why these techniques were chosen.*
