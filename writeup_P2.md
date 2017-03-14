@@ -29,7 +29,7 @@ The code in the 4th cell shows a histogram showing the frequency of each class:
 
 ![Figure 2](histogram1.png)
 
-The historgram clearly shows significant variability in class representation - some classes < 250 and other classes > 1,500. I tried to minimize the over/under-representation issue by data augmentation (see *Preprocessing* below).
+The historgram clearly shows significant variability in class representation - some classes < 250 and other classes > 1,500. I addressed the over/under-representation issue by data augmentation (see *Preprocessing* below).
 
 # **3. Design and Test a Model Architecture**
 *1) Preprocessing: The submission describes the preprocessing techniques used and why these techniques were chosen.*
@@ -200,3 +200,6 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 
 
 For the second image ...  
+
+REFERENCE
+1. [Jeremy Shannon's blog](https://medium.com/@jeremyeshannon/udacity-self-driving-car-nanodegree-project-2-traffic-sign-classifier-f52d33d4be9f#.j74ms0lgu)
