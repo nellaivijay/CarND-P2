@@ -34,7 +34,7 @@ The historgram clearly shows significant variability in class representation - s
 # **3. Design and Test a Model Architecture**
 *1) Preprocessing: The submission describes the preprocessing techniques used and why these techniques were chosen.*
 
-**Comment**: As a first step, I converted the images to grayscale and normalized the signal intensity to (-1, 1) to improve the model preformance. The code is included in the 5th cell.
+**Comment**: First, I converted the images to grayscale and normalized the signal intensity to (-1, 1) to improve the model preformance. The code is included in the 5th cell.
 
 * The shape of the image after grayscaling/normalization is (32, 32, 1)
 * The mean signal intensity of the image is:
@@ -44,6 +44,22 @@ The historgram clearly shows significant variability in class representation - s
 
 Below are 10 random image data extracted from the training set after grayscaling and normalization
 ![Figure 3](10random_classes_gn.png)
+
+Second, I augmented the training set to address the over/under-representation issue. Specifically, I used a combination of random translation, random scaling, random warping, and random brightness to increase the minium number of each label to be 1,000.
+
+The 6th cell contains the code for random translation:
+
+![Figure 4](translation.png)
+
+
+
+The sixth code cell of the IPython notebook contains the code for augmenting the data set. I decided to generate additional data because ... To add more data to the the data set, I used the following techniques because ... 
+
+Here is an example of an original image and an augmented image:
+
+![alt text][image3]
+
+The difference between the original data set and the augmented data set is the following ... 
 
 
 AUGMENT THE TRAINING DATA
@@ -91,21 +107,7 @@ VISUALIZE LAYERS OF THE NEURAL NETWORK
 See Step 4 of the Iptyon notebook for details about how to do this.
 
 
-####2. Describe how, and identify where in your code, you set up training, validation and testing data. How much data was in each set? Explain what techniques were used to split the data into these sets. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, identify where in your code, and provide example images of the additional data)
 
-The code for splitting the data into training and validation sets is contained in the fifth code cell of the IPython notebook.  
-
-To cross validate my model, I randomly split the training data into a training set and validation set. I did this by ...
-
-My final training set had X number of images. My validation set and test set had Y and Z number of images.
-
-The sixth code cell of the IPython notebook contains the code for augmenting the data set. I decided to generate additional data because ... To add more data to the the data set, I used the following techniques because ... 
-
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
 
 
 ####3. Describe, and identify where in your code, what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
