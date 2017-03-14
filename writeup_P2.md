@@ -9,15 +9,16 @@
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
 
-## [Rubric Points](https://review.udacity.com/#!/rubrics/481/view) 
+# [Rubric Points](https://review.udacity.com/#!/rubrics/481/view) 
 
-**1. Files Submitted**\
-Submission Files: The project submission includes all required files.
+# **1. Files Submitted**
+*Submission Files:* The project submission includes all required files.
 
 * The Traffic_Sign_Classifier.ipynb notebook file with all questions answered and all code cells executed and displaying output.
 * An HTML or PDF export of the project notebook with the name report.html or report.pdf.
 * Any additional datasets or images used for the project that are not from the German Traffic Sign Dataset.
 
+Comment
 ####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
 You're reading it! and here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
