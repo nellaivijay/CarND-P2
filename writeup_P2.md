@@ -49,7 +49,7 @@ Second, I augmented the training set to address the over/under-representation is
 
 The 6th cell contains the code for random translation:
 
-![Figure 4](translation.png)
+![Figure 4](transplation.png)
 
 
 
