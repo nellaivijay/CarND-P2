@@ -35,7 +35,7 @@
 
 **Comment**: The code for this step is contained in the third code cell of the IPython notebook.  
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
-![alt text][image1]
+![alt text][index.png]
 
 # **3. Design and Test a Model Architecture**
 *1) Preprocessing: The submission describes the preprocessing techniques used and why these techniques were chosen.*
