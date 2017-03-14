@@ -2,17 +2,16 @@
 # **1. Files Submitted**
 *1) Submission Files: The project submission includes all required files.*
 
+**Comment**: All required files are included in this repository.
 * The Traffic_Sign_Classifier.ipynb notebook file with all questions answered and all code cells executed and displaying output.
 * An HTML or PDF export of the project notebook with the name report.html or report.pdf.
 * Any additional datasets or images used for the project that are not from the German Traffic Sign Dataset.
-* Your writeup report as a markdown or pdf file
-
-**Comment**: All required files are included in this repository.
+* A writeup report as a markdown or pdf file (this file)
 
 # **2. Dataset Exploration**
 *1) Dataset Summary: The submission includes a basic summary of the data set.*
 
-**Comment**: The code for this step is contained in the second code cell of the IPython notebook. I used the numpy library to calculate summary statistics of the traffic signs data set:
+**Comment**: The code for this step is contained in the 2nd cell of the IPython notebook. I used the numpy library to calculate summary statistics of the traffic signs data set:
 
 * The size of training set is 34,799
 * The size of validation set is 4,410
@@ -22,17 +21,19 @@
 
 *2) Exploratory Visualization: The submission includes an exploratory visualization on the dataset.*
 
-**Comment**: The code for this step is contained in the third code cell of the IPython notebook. Below are 10 random image data extracted from the training set:
-![Figure 1](index.png)
+**Comment**: The code in the 3rd cell of the IPython notebook shows 10 random image data extracted from the training set:
 
-Below is a histogram showing the frequency of each class:
+![Figure 1](10_random_classes.png)
+
+The code in the 4th cell of the IPython notebook shows a histogram showing the frequency of each class:
+
 ![Figure 2](index.png)
 
 The historgram shows significant variability in class representation - some classes < 250 and other classes > 1,500. I tried to minimize the over/under-representation issue by data augmentation (see *Preprocessing* below).
 
 # **3. Design and Test a Model Architecture**
 *1) Preprocessing: The submission describes the preprocessing techniques used and why these techniques were chosen.*
-####1. Describe how, and identify where in your code, you preprocessed the image data. What tecniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc.
+
 **Comment**: The code for this step is contained in the fourth code cell of the IPython notebook.
 As a first step, I decided to convert the images to grayscale because ...
 Here is an example of a traffic sign image before and after grayscaling.
