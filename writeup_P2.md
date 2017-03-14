@@ -63,20 +63,15 @@ The 9th cell contains the code for random brightness:
 
 ![Figure 6](brightness.png)
 
-The minimum number of label was 180 (10th cell). I increased it to 1,000 (11th cell). Below is a comparison between the orignal (top row) and the augmented images (bottom row) of 5 randomly selected images (12th cell).
+Below is a comparison between the orignal (top row) and the augmented images (bottom row) of 5 randomly selected images (12th cell).
 
 ![Figure 7](augmented.png)
 
+In the original training set, the minimum number of label was 180 (10th cell). In the augmented training set, I increased it to 1,000 (11th cell). Now the historgram shows more homogeneous distribution of labels. 
 
+![Figure 8](histogram2.png)
 
-
-The sixth code cell of the IPython notebook contains the code for augmenting the data set. I decided to generate additional data because ... To add more data to the the data set, I used the following techniques because ... 
-
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
+In this project I did not use
 
 
 AUGMENT THE TRAINING DATA
