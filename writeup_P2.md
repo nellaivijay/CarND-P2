@@ -23,13 +23,12 @@ The goals / steps of this project are the following:
 # Rubric Points
 Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
-##Files Submitted
-Submission Files: 
-The project submission includes all required files.
+1. Files Submitted\
+Submission Files: The project submission includes all required files.
 
-The Traffic_Sign_Classifier.ipynb notebook file with all questions answered and all code cells executed and displaying output.
-An HTML or PDF export of the project notebook with the name report.html or report.pdf.
-Any additional datasets or images used for the project that are not from the German Traffic Sign Dataset.
+* The Traffic_Sign_Classifier.ipynb notebook file with all questions answered and all code cells executed and displaying output.
+* An HTML or PDF export of the project notebook with the name report.html or report.pdf.
+* Any additional datasets or images used for the project that are not from the German Traffic Sign Dataset.
 
 ####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
