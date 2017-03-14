@@ -1,4 +1,3 @@
-[//]: # (Image References)
 
 [image1]: https://github.com/ashikagah/CarND-P2/index.png "histogram original"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
@@ -38,7 +37,7 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 Reference-style: 
 ![alt text][image1]
-
+![alt text](https://github.com/ashikagah/CarND-P2/index.png "histogram original")
 
 
  CarND-P2/index.png 
