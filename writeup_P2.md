@@ -13,7 +13,7 @@
 
 *1) Dataset Summary: The submission includes a basic summary of the data set.*
 
-**Comment**: The code for this step is contained in the 2nd cell of the IPython notebook. I used the numpy library to calculate summary statistics of the traffic signs data set:
+**Comment**: I used the numpy library to calculate summary statistics of the traffic signs data set:
 
 * The size of training set is 34,799
 * The size of validation set is 4,410
@@ -23,11 +23,11 @@
 
 *2) Exploratory Visualization: The submission includes an exploratory visualization on the dataset.*
 
-**Comment**: The code in the 3rd cell shows 10 random image data extracted from the training set (ref. 1):
+**Comment**: Below 10 random image data extracted from the training set (ref. 1):
 
 ![Figure 1](10random_classes.png)
 
-The code in the 4th cell shows a histogram showing the frequency of each class:
+Below is a histogram showing the frequency of each class:
 
 ![Figure 2](histogram1.png)
 
@@ -37,7 +37,7 @@ The historgram clearly shows significant variability in class representation - s
 
 *1) Preprocessing: The submission describes the preprocessing techniques used and why these techniques were chosen.*
 
-**Comment**: First, I converted the images to grayscale and normalized the signal intensity to (-1, 1) to improve the model preformance. The code is included in the 5th cell.
+**Comment**: First, I converted the images to grayscale and normalized the signal intensity to (-1, 1) to improve the model preformance.
 
 * The shape of the image after grayscaling/normalization is (32, 32, 1)
 * The mean signal intensity of the image is:
@@ -50,27 +50,27 @@ Below are 10 random image data extracted from the training set after grayscaling
 
 Second, I augmented the training set to address the over/under-representation issue. Specifically, I used a combination of random translation, random scaling, random warping, and random brightness to increase the minium number of each label to be 1,000.
 
-The 6th cell contains the code for random translation:
+Random translation:
 
 ![Figure 4](transplation.png)
 
-The 7th cell contains the code for random scaling:
+Random scaling:
 
 ![Figure 5](scaling.png)
 
-The 8th cell contains the code for random warping:
+Random warping:
 
 ![Figure 5](warping.png)
 
-The 9th cell contains the code for random brightness:
+Random brightness:
 
 ![Figure 6](brightness.png)
 
-Below is a comparison between the orignal (top row) and the augmented images (bottom row) of 5 randomly selected images (12th cell).
+Below is a comparison between the orignal (top row) and the augmented images (bottom row) of 5 randomly selected images.
 
 ![Figure 7](augmented.png)
 
-In the original training set, the minimum number of label was 180 (10th cell). In the augmented training set, I increased it to 1,000 (11th cell). Now the historgram shows more homogeneous distribution of labels (13th cell). 
+In the original training set, the minimum number of label was 180. In the augmented training set, I increased it to 1,000. Now the historgram shows more homogeneous distribution of labels. 
 
 ![Figure 8](histogram2.png)
 
@@ -79,7 +79,7 @@ In this project I did not use rotation or flips, because it is unlikely that the
 
 *2) Model Architecture: The submission provides details of the characteristics and qualities of the architecture, such as the type of model used, the number of layers, the size of each layer. Visualizations emphasizing particular qualities of the architecture are encouraged.*
 
-**Comment**: The code for my final model is located in the 16th cell. Initially I used the original LeNet model and simply changed the output to 43 labels instead of 10 numbers. However, after several iterations the test accuracy reached only at 0.834. So I used the modified LeNet model (ref. 2). My final model consists of the following layers:
+**Comment**: Initially I used the original LeNet model and simply changed the output to 43 labels instead of 10 numbers. However, after several iterations the test accuracy reached only at 0.834. So I used the modified LeNet model (ref. 2). My final model consists of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -105,7 +105,7 @@ In this project I did not use rotation or flips, because it is unlikely that the
 
 *3) Model Training: The submission describes how the model was trained by discussing what optimizer was used, batch size, number of epochs and values for hyperparameters.*
 
-**Comment**: The code for training the model is located in the 18th cell of the ipython notebook. To train the model, I used the following parameters:
+**Comment**: To train the model, I used the following parameters:
 
 * Learning rate at 0.001
 * Adam optimizer to minimize the loss of cross-entropy
@@ -115,9 +115,8 @@ In this project I did not use rotation or flips, because it is unlikely that the
 
 *4) Solution Approach: The submission describes the approach to finding a solution. Accuracy on the validation set is 0.93 or greater.*
 
-**Comment**: The code for calculating the accuracy of the model is located in the 19th cell.
+**Comment**: My final model results were:
 
-My final model results were:
 * Validation set accuracy of 0.929 at EPOCH 100
 * Test set accuracy of 0.931 > 0.93!
 
@@ -132,7 +131,7 @@ Summary of iterations:
 
 *1) Acquiring New Images: The submission includes five new German Traffic signs found on the web, and the images are visualized. Discussion is made as to any particular qualities of the images or traffic signs in the images that may be of interest, such as whether they would be difficult for the model to classify.*
 
-**Comment**: I downloaded the test set from [**Dataset discussion: German Traffic Signs**](http://forums.fast.ai/t/dataset-discussion-german-traffic-signs/766). I picked 5 random images shown below (20th cell):
+**Comment**: I downloaded the test set from [**Dataset discussion: German Traffic Signs**](http://forums.fast.ai/t/dataset-discussion-german-traffic-signs/766). I picked 5 random images shown below:
 
 ![Figure 9](myimgs.png)
 
@@ -144,7 +143,7 @@ The same preprocessing (grayscaling and normalization) was applied to the 5 imag
 
 *2) Performance on New Images: The submission documents the performance of the model when tested on the captured images. The performance on the new images is compared to the accuracy results of the test set.*
 
-**Comment**: The code for making predictions on my final model is located in the 21th cell of the IPython notebook. Below are the results of the prediction:
+**Comment**: Below are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -159,7 +158,9 @@ The model was able to correctly guess 5 of the 5 traffic signs, which gives an a
 
 *3) Model Certainty - Softmax Probabilities: The top five softmax probabilities of the predictions on the captured images are outputted. The submission discusses how certain or uncertain the model is of its predictions.*
 
-**Comment**:
+**Comment**: Below is a figure showing the top five softmax probabilities of the predictions on the 5 new images.
+
+![Figure 10](certainty_pic.png)
 
 CREATE VISUALIZATIONS OF THE SOFTMAX PROBABILITIES
 For each of the five new images, create a graphic visualization of the soft-max probabilities. Bar charts might work well.
