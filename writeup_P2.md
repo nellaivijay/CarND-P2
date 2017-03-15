@@ -1,7 +1,7 @@
-#**Traffic Sign Recognition** 
+# **Traffic Sign Recognition** 
 
 ## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation. 
+### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation. 
 
 # **1. Files Submitted**
 
