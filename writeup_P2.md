@@ -158,27 +158,13 @@ The model was able to correctly guess 5 of the 5 traffic signs, which gives an a
 
 *3) Model Certainty - Softmax Probabilities: The top five softmax probabilities of the predictions on the captured images are outputted. The submission discusses how certain or uncertain the model is of its predictions.*
 
-**Comment**: Below is a figure showing the top five softmax probabilities of the predictions on the 5 new images.
+**Comment**: Below is a figure showing the top five softmax probabilities of the predictions on the 5 new images:
 
-![Figure 10](certainty_pic.png)
+![Figure 10](certainty_pict.png)
 
-CREATE VISUALIZATIONS OF THE SOFTMAX PROBABILITIES
-For each of the five new images, create a graphic visualization of the soft-max probabilities. Bar charts might work well.
+Below are bar charts:
 
-VISUALIZE LAYERS OF THE NEURAL NETWORK
-See Step 4 of the Iptyon notebook for details about how to do this.
-
-
-
-
-
-
-
-
-
-
-
-
+![Figure 11](certainty_bar.png)
 
 
 
