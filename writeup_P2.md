@@ -132,6 +132,13 @@ Summary of iterations:
 
 *1) Acquiring New Images: The submission includes five new German Traffic signs found on the web, and the images are visualized. Discussion is made as to any particular qualities of the images or traffic signs in the images that may be of interest, such as whether they would be difficult for the model to classify.*
 
+**Comment**: I downloaded the test set from [**Dataset discussion: German Traffic Signs**](http://forums.fast.ai/t/dataset-discussion-german-traffic-signs/766). I picked 5 random images shown below:
+
+![Figure 9](myimgs.png)
+
+
+*2) Performance on New Images: The submission documents the performance of the model when tested on the captured images. The performance on the new images is compared to the accuracy results of the test set.*
+
 **Comment**:
 
 ANALYZE NEW IMAGE PERFORMANCE IN MORE DETAIL
@@ -141,10 +148,6 @@ If one of the new images is a stop sign but was predicted to be a bumpy road sig
 
 Looking at performance of individual sign types can help guide how to better augment the data set or how to fine tune the model. 
 
-
-*2) Performance on New Images: The submission documents the performance of the model when tested on the captured images. The performance on the new images is compared to the accuracy results of the test set.*
-
-**Comment**:
 
 *3) Model Certainty - Softmax Probabilities: The top five softmax probabilities of the predictions on the captured images are outputted. The submission discusses how certain or uncertain the model is of its predictions.*
 
