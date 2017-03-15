@@ -1,5 +1,6 @@
 # [Rubric Points](https://review.udacity.com/#!/rubrics/481/view) 
 # **1. Files Submitted**
+
 *1) Submission Files: The project submission includes all required files.*
 
 **Comment**: All required files are included in this repository.
@@ -9,6 +10,7 @@
 * A writeup report as a markdown or pdf file (this file)
 
 # **2. Dataset Exploration**
+
 *1) Dataset Summary: The submission includes a basic summary of the data set.*
 
 **Comment**: The code for this step is contained in the 2nd cell of the IPython notebook. I used the numpy library to calculate summary statistics of the traffic signs data set:
@@ -32,6 +34,7 @@ The code in the 4th cell shows a histogram showing the frequency of each class:
 The historgram clearly shows significant variability in class representation - some classes < 250 and other classes > 1,500. I addressed the over/under-representation issue by data augmentation (see *Preprocessing* below).
 
 # **3. Design and Test a Model Architecture**
+
 *1) Preprocessing: The submission describes the preprocessing techniques used and why these techniques were chosen.*
 
 **Comment**: First, I converted the images to grayscale and normalized the signal intensity to (-1, 1) to improve the model preformance. The code is included in the 5th cell.
@@ -73,6 +76,7 @@ In the original training set, the minimum number of label was 180 (10th cell). I
 
 In this project I did not use rotation or flips, because it is unlikely that the self-driving would encounter rotated (hopefully) or flipped traffic signs. I also did not use color perturbation because the images are grayscale.
 
+
 *2) Model Architecture: The submission provides details of the characteristics and qualities of the architecture, such as the type of model used, the number of layers, the size of each layer. Visualizations emphasizing particular qualities of the architecture are encouraged.*
 
 **Comment**: The code for my final model is located in the 16th cell. Initially I used the original LeNet model and simply changed the output to 43 labels instead of 10 numbers. However, after several iterations the test accuracy reached only at 0.834. So I used the modified LeNet model (ref. 2). My final model consists of the following layers:
@@ -98,6 +102,7 @@ In this project I did not use rotation or flips, because it is unlikely that the
 | RELU		|         									|
 |	**Layer 6: Fully connected**		|	Output 43						|
 
+
 *3) Model Training: The submission describes how the model was trained by discussing what optimizer was used, batch size, number of epochs and values for hyperparameters.*
 
 **Comment**: The code for training the model is located in the 18th cell of the ipython notebook. To train the model, I used the following parameters:
@@ -107,30 +112,20 @@ In this project I did not use rotation or flips, because it is unlikely that the
 * Batch size was initially set at 100-128 and had an accuracy >0.90. Since the size of the training set increased to >50,000 by augmentation, the batch size was increased to 500 to take full advantage of the training set. As a result, the model performance improved slightly.
 * Number of epochs was set at 100, which was a realistic maximum on my MacBook Air (CPU only)
 
+
 *4) Solution Approach: The submission describes the approach to finding a solution. Accuracy on the validation set is 0.93 or greater.*
 
-**Comment**:
-####5. Describe the approach taken for finding a solution. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
-
-The code for calculating the accuracy of the model is located in the ninth cell of the Ipython notebook.
+**Comment**: The code for calculating the accuracy of the model is located in the 19th cell.
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* Validation set accuracy of 0.929 at EPOCH 100
+* Test set accuracy of 0.931 > 0.93!
 
-If an iterative approach was chosen:
-* What was the first architecture that was tried and why was it chosen?
-* What were some problems with the initial architecture?
-* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to over fitting or under fitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-* Which parameters were tuned? How were they adjusted and why?
-* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
-
-If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- 
+Summary of iterations:
+* Initially I used the original LeNet model, but the test accuracy reached only at 0.834. So I used the modified LeNet model (ref. 2).
+* The modified LeNet model produced higher test accuracy values than the original LeNet model, but the test accuracy was still < 0.92.
+* I removed Layers 4, 5 and 6 (fully connected layers) but the test accuracy did not significantly improve.
+* Other parameters that I iterated include learning rate, batch size, droput probability.
  
  
 # **4. Test a Model on New Images**
