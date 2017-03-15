@@ -21,7 +21,7 @@
 
 *2) Exploratory Visualization: The submission includes an exploratory visualization on the dataset.*
 
-**Comment**: The code in the 3rd cell shows 10 random image data extracted from the training set:
+**Comment**: The code in the 3rd cell shows 10 random image data extracted from the training set (ref. 1):
 
 ![Figure 1](10random_classes.png)
 
@@ -75,25 +75,28 @@ In this project I did not use rotation or flips, because it is unlikely that the
 
 *2) Model Architecture: The submission provides details of the characteristics and qualities of the architecture, such as the type of model used, the number of layers, the size of each layer. Visualizations emphasizing particular qualities of the architecture are encouraged.*
 
-**Comment**: The code for my final model is located in the seventh cell of the ipython notebook. 
-
-My final model consisted of the following layers:
+**Comment**: The code for my final model is located in the 16th cell. Initially I used the original LeNet model and simply changed the output to 43 labels instead of 10 numbers. However, after several iterations the test accuracy reached only at 0.834. So I used the modified LeNet model (ref. 2). My final model consists of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
+| Input         		| 32x32x1 grayscale image   							| 
+| Layer 1: Convolution 5x5     	| 1x1 stride without padding. Output 28x28x6 	|
 | RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
- 
-
-
-
+| Max pooling	      	| 2x2 stride. Output 14x14x6 				|
+| Layer 2: Convolution 5x5	    |  1x1 stride without padding. Output 10x10x16  	|
+| RELU		|         									|
+| Max pooling		| 2x2 stride. Output 5x5x16        									|
+|	Flatten Layer 2		|	Output 400									|
+|	Layer 3: Convolution 5x5	|	1x1 stride without padding. Output 1x1x400		|
+| RELU		|         									|
+|	Flatten Layer 3		|	Output 400							|
+|	Concatenate Layer 2 and Layer 3		|	Output 800						|
+|	Dropout		|	Output 800						|
+|	Layer 4: Fully connected		|	Output 120						|
+| RELU		|         									|
+|	Layer 5: Fully connected		|	Output 84						|
+| RELU		|         									|
+|	Layer 6: Fully connected		|	Output 43						|
 
 *3) Model Training: The submission describes how the model was trained by discussing what optimizer was used, batch size, number of epochs and values for hyperparameters.*
 
@@ -212,3 +215,5 @@ For the second image ...
 
 REFERENCE
 1. [Jeremy Shannon's blog](https://medium.com/@jeremyeshannon/udacity-self-driving-car-nanodegree-project-2-traffic-sign-classifier-f52d33d4be9f#.j74ms0lgu)
+2. Sermanet P, LeCun Y. Traffic sign recognition with multi-scale convolutional networks, 2011. [pdf](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf)
+
