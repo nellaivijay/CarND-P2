@@ -136,6 +136,10 @@ Summary of iterations:
 
 ![Figure 9](myimgs.png)
 
+The same preprocessing (grayscaling and normalization) was applied to the 5 images. There are two potential issues associates with the new 5 images that may make the model perfomance low:
+
+* Red and blue are inverted. For example, the edge of the 1st image ("Vehicles over 3.5 metric tons prohibited") should actually be red, but in this image it is blue. Therefore, the pixel values may be off from those of the training set. However, grayscaling should address at least some of the issue.
+* The signal intensity seems higher than those of the traning set. Therefore, the pixel values may be off from those of the training set. However, normalization should address at least some of the issue.
 
 *2) Performance on New Images: The submission documents the performance of the model when tested on the captured images. The performance on the new images is compared to the accuracy results of the test set.*
 
