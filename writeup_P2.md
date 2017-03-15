@@ -5,7 +5,7 @@
 
 # **1. Files Submitted**
 
-*1) Submission Files: The project submission includes all required files.*
+### *1) Submission Files: The project submission includes all required files.*
 
 **Comment**: All required files are included in this repository.
 * The Traffic_Sign_Classifier.ipynb notebook file with all questions answered and all code cells executed and displaying output.
@@ -15,7 +15,7 @@
 
 # **2. Dataset Exploration**
 
-*1) Dataset Summary: The submission includes a basic summary of the data set.*
+### *1) Dataset Summary: The submission includes a basic summary of the data set.*
 
 **Comment**: I used the numpy library to calculate summary statistics of the traffic signs data set:
 
@@ -25,7 +25,7 @@
 * The shape of a traffic sign image is (32, 32, 3)
 * The number of unique classes/labels in the data set is 43
 
-*2) Exploratory Visualization: The submission includes an exploratory visualization on the dataset.*
+### *2) Exploratory Visualization: The submission includes an exploratory visualization on the dataset.*
 
 **Comment**: Below are 10 random images extracted from the training set (ref. 1):
 
@@ -39,7 +39,7 @@ The historgram clearly shows significant variability in class representation - s
 
 # **3. Design and Test a Model Architecture**
 
-*1) Preprocessing: The submission describes the preprocessing techniques used and why these techniques were chosen.*
+### *1) Preprocessing: The submission describes the preprocessing techniques used and why these techniques were chosen.*
 
 **Comment**: First, I converted the images to grayscale and normalized the signal intensity to (-1, 1) to improve the model preformance.
 
@@ -81,7 +81,7 @@ In the original training set, the minimum number of label was 180. In the augmen
 In this project I did not use rotation or flips, because it is unlikely that the self-driving would encounter rotated (hopefully) or flipped traffic signs. I also did not use color perturbation because the images are grayscale.
 
 
-*2) Model Architecture: The submission provides details of the characteristics and qualities of the architecture, such as the type of model used, the number of layers, the size of each layer. Visualizations emphasizing particular qualities of the architecture are encouraged.*
+### *2) Model Architecture: The submission provides details of the characteristics and qualities of the architecture, such as the type of model used, the number of layers, the size of each layer. Visualizations emphasizing particular qualities of the architecture are encouraged.*
 
 **Comment**: Initially I used the original LeNet model and simply changed the output to 43 labels instead of 10 numbers. However, after several iterations the test accuracy reached only at 0.834. So I used the modified LeNet model (ref. 2). My final model consists of the following layers:
 
@@ -107,7 +107,7 @@ In this project I did not use rotation or flips, because it is unlikely that the
 |	**Layer 6: Fully connected**		|	Output 43						|
 
 
-*3) Model Training: The submission describes how the model was trained by discussing what optimizer was used, batch size, number of epochs and values for hyperparameters.*
+### *3) Model Training: The submission describes how the model was trained by discussing what optimizer was used, batch size, number of epochs and values for hyperparameters.*
 
 **Comment**: To train the model, I used the following parameters:
 
@@ -117,7 +117,7 @@ In this project I did not use rotation or flips, because it is unlikely that the
 * Number of epochs was set at 100, which was a realistic maximum on my MacBook Air (CPU only)
 
 
-*4) Solution Approach: The submission describes the approach to finding a solution. Accuracy on the validation set is 0.93 or greater.*
+### *4) Solution Approach: The submission describes the approach to finding a solution. Accuracy on the validation set is 0.93 or greater.*
 
 **Comment**: My final model results were:
 
@@ -133,7 +133,7 @@ Summary of iterations:
  
 # **4. Test a Model on New Images**
 
-*1) Acquiring New Images: The submission includes five new German Traffic signs found on the web, and the images are visualized. Discussion is made as to any particular qualities of the images or traffic signs in the images that may be of interest, such as whether they would be difficult for the model to classify.*
+### *1) Acquiring New Images: The submission includes five new German Traffic signs found on the web, and the images are visualized. Discussion is made as to any particular qualities of the images or traffic signs in the images that may be of interest, such as whether they would be difficult for the model to classify.*
 
 **Comment**: I downloaded the test set from [**Dataset discussion: German Traffic Signs**](http://forums.fast.ai/t/dataset-discussion-german-traffic-signs/766). I picked 5 random images shown below:
 
@@ -145,7 +145,7 @@ The same preprocessing (grayscaling and normalization) was applied to the 5 imag
 * The signal intensity seems higher than those of the traning set. Therefore, the pixel values may be off from those of the training set. However, normalization should address at least some of the issue.
 
 
-*2) Performance on New Images: The submission documents the performance of the model when tested on the captured images. The performance on the new images is compared to the accuracy results of the test set.*
+### *2) Performance on New Images: The submission documents the performance of the model when tested on the captured images. The performance on the new images is compared to the accuracy results of the test set.*
 
 **Comment**: Below are the results of the prediction:
 
@@ -160,7 +160,7 @@ The same preprocessing (grayscaling and normalization) was applied to the 5 imag
 The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. This was better than the accuracy on the test set of 93.1%. It is reassuring that my model performs well in real-world examples, but 5 examples are by no means sufficient to determine the overall performance of the model.
 
 
-*3) Model Certainty - Softmax Probabilities: The top five softmax probabilities of the predictions on the captured images are outputted. The submission discusses how certain or uncertain the model is of its predictions.*
+### *3) Model Certainty - Softmax Probabilities: The top five softmax probabilities of the predictions on the captured images are outputted. The submission discusses how certain or uncertain the model is of its predictions.*
 
 **Comment**: Below is a figure showing the top five softmax probabilities of the predictions on the 5 new images:
 
