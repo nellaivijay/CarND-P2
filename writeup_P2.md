@@ -139,7 +139,9 @@ Summary of iterations:
 
 ![Figure 9](myimgs.png)
 
-The size of the new images is not homogeneous. None of the images that I checked was square. I used [ImageJ](https://imagej.nih.gov/) to adjust the size of each of new images to 32x32 to be able to feed them into my model. Then the same preprocessing method (grayscaling and normalization) was applied to the 5 images. There are two potential issues associates with the new 5 images that may make the model perfomance low:
+The size of the new images is not homogeneous. In addition, none of the images that I checked was square. The extension of the images is .ppm. I used [ImageJ](https://imagej.nih.gov/) to adjust the size of each of new images to 32x32 to be able to feed them into my model. When I adjusted the size, I did not maintain the aspect ratio to make it more challenging for the model to correctly classify the label. I also changed the image type to .png. 
+
+Then the same preprocessing method (grayscaling and normalization) was applied to the 5 images. There are two potential issues associates with the new 5 images that may make the model perfomance low:
 
 * Red and blue are inverted. For example, the edge of the 1st image ("Vehicles over 3.5 metric tons prohibited") should actually be red, but in this image it is blue. Therefore, the pixel values may be off from those of the training set. However, grayscaling should address at least some of the issue.
 * The signal intensity seems higher than those of the traning set. Therefore, the pixel values may be off from those of the training set. However, normalization should address at least some of the issue.
