@@ -123,7 +123,7 @@ In this project I did not use rotation or flips, because it is unlikely that the
 Summary of iterations:
 * Initially I used the original LeNet model, but the test accuracy reached only at 0.834. So I used the modified LeNet model (ref. 2).
 * The modified LeNet model produced higher test accuracy values than the original LeNet model, but the test accuracy was still < 0.92.
-* I removed Layers 4, 5 and 6 (fully connected layers) but the test accuracy did not significantly improve.
+* I removed Layers 4, 5 and 6 (fully connected layers) but the test accuracy did not significantly improve. I put them back in the final model.
 * Other parameters that I iterated include learning rate, batch size, droput probability.
  
  
