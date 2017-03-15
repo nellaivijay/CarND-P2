@@ -23,7 +23,7 @@
 
 *2) Exploratory Visualization: The submission includes an exploratory visualization on the dataset.*
 
-**Comment**: Below 10 random image data extracted from the training set (ref. 1):
+**Comment**: Below are 10 random images extracted from the training set (ref. 1):
 
 ![Figure 1](10random_classes.png)
 
